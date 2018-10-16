@@ -1,0 +1,15 @@
+module "prd" {
+   source = "../"
+   instance_type = "t2.small"
+   env = "prd"
+   region_s = "use1"
+   aws_region = "us-east-1"
+   access_key = "webapp_prd_access"
+   availability_zones = "us-east-1a,us-east-1b"
+   prv_subnet = "subnet-8dxxxxxx"
+   pub_subnets = "subnet-1dxxxxx,subnet-bxxxxdc"
+   vpc_details = "vpc-c1fxxxa9"
+   max = "4"
+   min = "2"
+   desired = "2" 
+}
